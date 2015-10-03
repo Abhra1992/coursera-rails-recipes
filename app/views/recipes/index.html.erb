@@ -1,5 +1,23 @@
 <h1>Recipes#index</h1>
 <p>Queried for <%= @query.camelcase %></p>
-<p>Results: <%= @results.to_yaml %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Thumbnail</th>
+      <th>Title</th>
+      <th>Social Rank</th></tr>
+  </thead>
+  <tbody>
+    <% @results.each do |r| %>
+    <tr>
+      <td><%= link_to (image_tag r["image_url"], alt: r["title"]),  r["source_url"] %></td>
+      <td><%= link_to r["title"], r["source_url"] %></td>
+      <td><%= r["social_rank"] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <% console %>
 <p>Powered By Food2Fork.com</p>
