@@ -10,6 +10,5 @@ class Recipe
 
   def self.for keyword
     self.get("/search", query: { q: keyword })["recipes"]
-    # JSON.parse(File.read("chocolate.json"))["recipes"]
   end
 end

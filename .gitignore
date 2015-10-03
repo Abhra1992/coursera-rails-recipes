@@ -21,3 +21,4 @@ README.*
 # Ignore application configuration
 /config/application.yml
 chocolate.json
+Food.zip
