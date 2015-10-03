@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Food</title>
+  <title>RecipeFinder</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header>
+		<h1>RecipeFinder</h1>
+	</header>
+  <%= yield %>
+  <footer class="footer">
+    <p>Powered By Food2Fork.com</p>
+  </footer>
 </body>
 </html>
