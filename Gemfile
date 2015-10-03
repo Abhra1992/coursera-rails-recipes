@@ -26,3 +26,4 @@ end
 
 gem 'httparty'
 gem 'tzinfo-data'
+gem 'figaro'
