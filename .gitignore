@@ -20,3 +20,4 @@ README.*
 
 # Ignore application configuration
 /config/application.yml
+chocolate.json
